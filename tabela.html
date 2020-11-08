@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tabela de Contatos</title>
+    <link rel="stylesheet" href="styleT.css">
+    <script type="text/javascript" src="scriptT.js">
+
+    </script>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="titulo">TABELA DE CONTATOS</h1>
+      <form class="tab">
+        <br>
+        <label for="nome" class="subT">Nome do Contato:</label><br>
+        <input type="text" name="nome" id="nome"><br><br>
+
+        <label for="telefone" class="subT">Telefone do Contato:</label><br>
+        <input type="tel" name="tel" id="tel"><br><br>
+
+        <label for="email" class="subT">Email do Contato:</label><br>
+        <input type="email" name="email" id="email"><br><br>
+
+        <button type="button" name="button" onclick="addContatoALista()" class="botaum">Salvar dados</button>
+      </form>
+
+      <br>
+
+      <table border="0">
+        <thead>
+          <th>Nome</th>
+          <th>Telefone</th>
+          <th>Email</th>
+        </thead>
+        <tbody id="contatos">
+
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

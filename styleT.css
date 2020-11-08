@@ -1,0 +1,100 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+}
+
+body{
+  background: black;
+}
+
+div.container {
+  height: 10em;
+  position: relative
+}
+
+div.container{
+  padding: 0px;
+  padding-bottom: 130px;
+  margin: 0;
+  background: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.titulo{
+  background: #009933;
+  padding: 10px;
+  font-size: 30px;
+  font-family: Tahoma;
+  text-align: center;
+  color: white;
+}
+
+.subT{
+  margin-left: 23px;
+  font-family: Tahoma;
+  font-size: 15px;
+  color: black;
+}
+
+#nome{
+  margin-left: 20px;
+}
+
+#tel{
+  margin-left: 20px;
+}
+
+#email{
+  margin-left: 20px;
+}
+
+.botaum{
+  padding: 10px;
+  margin-left: 20px;
+  border: 1px solid #009933;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
+.botaum:hover{
+  background: black;
+  color: white;
+  transition: 0.4s;
+}
+
+table{
+  padding: 10px;
+  border: 1px;
+  border-spacing: 2px;
+  border-collapse: collapse;
+}
+
+th{
+  font-size: 30px;
+  background: #009933;
+  padding: 20px;
+  font-family: Tahoma;
+  color: white;
+}
+
+td{
+  border: none;
+}
+
+#contatos{
+  font-size: 15px;
+  background: #ccc;
+  font-family: Tahoma;
+  color: black;
+  text-align: center;
+}
