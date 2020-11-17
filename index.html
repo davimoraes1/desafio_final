@@ -2,27 +2,46 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="icones/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icones/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icones/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icones/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icones/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icones/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icones/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icones/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icones/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icones/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icones/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icones/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icones/favicon-16x16.png">
+    <link rel="manifest" href="icones/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icones/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>DSM</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <title>DSM</title>
   </head>
   <body>
     <!-- HEADER -->
     <div id="top" class="header">
       <a href="#default" class="logo">&#127756; DSM</a>
-      <div class="header-right">
-        <a href="#about">&#127891; Sobre</a>
-        <a href="#projects">&#128204; Projetos</a>
-        <a href="#contact">&#128222; Contato</a>
-        <a href="http://www.mediafire.com/file/6c3ojpa7cu87927/projetos.rar/file" target="_blank">&#128279; Download</a>
+      <div id="top1" class="header-right">
+        <a class="btn btn-primary" href="#about" role="button" style="color: white;">Sobre</a>
+        <a class="btn btn-primary" href="#projects" role="button" style="color: white;">Projetos</a>
+        <a class="btn btn-primary" href="#contact" role="button" style="color: white;">Contato</a>
+        <a class="btn btn-primary" href="http://www.mediafire.com/file/6c3ojpa7cu87927/projetos.rar/file" target="_blank" role="button" style="color: white;">Download</a>
       </div>
     </div>
 
     <!-- INÍCIO -->
     <div class="join">
-      <h1 class="dsm">DSM</h1>
-      <p class="sub">Seja bem-vindo ao meu portfólio, por aqui saberá um pouco mais sobre mim e meus projetos.</p>
+      <h1 style="font-size:8vw">DSM</h1>
+      <p style="font-size:1.3vw">Seja bem-vindo ao meu portfólio, por aqui saberá um pouco mais sobre mim e meus projetos.</p>
     </div>
 
 
@@ -30,76 +49,100 @@
 
 
     <!--FLEXBOX-->
+
     <section class="bg">
 
       <h1 id="about" class="titulo">&#127891; SOBRE</h1>
 
       <section class="flex">
         <div class="flex-item">
-          <div class="zoom">
-            <img class="prog" src="img/rosto.jpg" alt="">
+          <div id="eu" class="card" style="width: 40rem; background: rgba(38, 38, 38, 0.4);">
+            <div class="zoom">
+              <img class="card-img-top" src="img/rosto.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <p class="card-text" style="color: white;">Me chamo Davi Soares Moraes, tenho 17 anos e atualmente curso o sexto semestre do curso de
+              Informática no Instituto Federal de Mato Grosso do Sul (IFMS). Sou um programador e designer amador.</p>
+            </div>
           </div>
-          <p class="leg">Acadêmico</p>
         </div>
-
-        <p class="legenda">Me chamo Davi Soares Moraes, tenho 17 anos e atualmente curso o sexto semestre do curso de
-        Informática no Instituto Federal de Mato Grosso do Sul (IFMS). Sou um programador e designer amador.</p>
       </section>
-
 
     <!-- PROJETOS -->
 
-
       <h1 id="projects" class="titulo">&#128204; PROJETOS</h1>
       <section class="flex">
+
         <div class="flex-item">
-          <div class="zoom">
-            <a href="slider.html" target="_blank"><img src="img/power.jpg" alt=""></a>
+          <div class="card" style="width: 18rem; background: rgba(38, 38, 38, 0.4);">
+            <div class="zoom">
+              <a href="slider.html" target="_blank"><img class="card-img-top" src="img/power.jpg" alt="Card image cap"></a>
+            </div>
+            <div class="card-body">
+              <p class="leg">Slider Automático</p>
+              <a href="slider.html" target="_blank" class="subtitulo">Slider automático de fotos feito em HTML e CSS.</a>
+            </div>
           </div>
-          <p class="leg">Slider Automático</p>
-          <a href="slider.html" target="_blank" class="subtitulo">Slider automático de fotos feito em HTML e CSS.</a>
+
+        <div class="flex-item">
+          <div class="card" style="width: 18rem; background: rgba(38, 38, 38, 0.4);">
+            <div class="zoom">
+              <a href="relogio.html" target="_blank"><img class="card-img-top" src="img/relogio.jpg" alt="Card image cap"></a>
+            </div>
+            <div class="card-body">
+              <p class="leg">Relógio Digital</p>
+              <a href="relogio.html" target="_blank" class="subtitulo">Relógio digital produzido através de HTML, CSS e JS.</a>
+            </div>
+          </div>
         </div>
 
         <div class="flex-item">
-          <div class="zoom">
-            <a href="relogio.html" target="_blank"><img src="img/relogio.jpg" alt=""></a>
+          <div class="card" style="width: 18rem; background: rgba(38, 38, 38, 0.4);">
+            <div class="zoom">
+              <a href="DNewS/index.html" target="_blank"><img class="card-img-top" src="img/foto2.jpg" alt="Card image cap"></a>
+            </div>
+            <div class="card-body">
+              <p class="leg">Site de Notícias</p>
+              <a href="DNewS/index.html" target="_blank" class="subtitulo">Desenvolvido inteiramente através de HTML e CSS.</a>
+            </div>
           </div>
-          <p class="leg">Relógio Digital</p>
-          <a href="relogio.html" target="_blank" class="subtitulo">Relógio digital produzido através de HTML, CSS e JS.</a>
         </div>
 
         <div class="flex-item">
-          <div class="zoom">
-            <a href="DNewS/index.html" target="_blank"><img src="img/foto2.jpg" alt=""></a>
+          <div class="card" style="width: 18rem; background: rgba(38, 38, 38, 0.4);">
+            <div class="zoom">
+              <a href="calculadora.html" target="_blank"><img class="card-img-top" src="img/calc.jpg" alt="Card image cap"></a>
+            </div>
+            <div class="card-body">
+              <p class="leg">Calculadora Digital</p>
+              <a href="calculadora.html" target="_blank" class="subtitulo">Calculadora digital desenvolvida inteiramente através das ferramentas HTML, CSS e JS.</a>
+            </div>
           </div>
-          <p class="leg">Site de Notícias</p>
-          <a href="DNewS/index.html" target="_blank" class="subtitulo">Desenvolvido inteiramente através de HTML e CSS.</a>
         </div>
 
         <div class="flex-item">
-          <div class="zoom">
-            <a href="calculadora.html" target="_blank"><img src="img/calc.jpg" alt=""></a>
+          <div class="card" style="width: 18rem; background: rgba(38, 38, 38, 0.4);">
+            <div class="zoom">
+              <a href="tabela.html" target="_blank"><img class="card-img-top" src="img/excel.jpg" alt="Card image cap"></a>
+            </div>
+            <div class="card-body">
+              <p class="leg">Tabela de Contatos</p>
+              <a href="tabela.html" target="_blank" class="subtitulo">Usando como base uma tabela feita em WEB1, seu design foi estilizado através do CSS.</a>
+            </div>
           </div>
-          <p class="leg">Calculadora Digital</p>
-          <a href="calculadora.html" target="_blank" class="subtitulo">Calculadora digital desenvolvida inteiramente através das ferramentas HTML, CSS e JS.</a>
         </div>
 
         <div class="flex-item">
-          <div class="zoom">
-            <a href="tabela.html" target="_blank"><img src="img/excel.jpg" alt=""></a>
+          <div class="card" style="width: 18rem; background: rgba(38, 38, 38, 0.4);">
+            <div class="zoom">
+              <a href="tabuada.html" target="_blank"><img class="card-img-top" src="img/tabuada.jpg" alt="Card image cap"></a>
+            </div>
+            <div class="card-body">
+              <p class="leg">Gerador de Tabuada</p>
+              <a href="tabuada.html" target="_blank" class="subtitulo">Adaptando o gerador de WEB1, seu design também foi estulizado através do CSS.</a>
+            </div>
           </div>
-          <p class="leg">Tabela de Contatos</p>
-          <a href="tabela.html" target="_blank" class="subtitulo">Usando como base a tabela feita em WEB1, seu design foi estilizado através do CSS.</a>
         </div>
-
-        <div class="flex-item">
-          <div class="zoom">
-            <a href="tabuada.html" target="_blank"><img src="img/tabuada.jpg" alt=""></a>
-          </div>
-          <p class="leg">Gerador de Tabuada</p>
-          <a href="tabuada.html" target="_blank" class="subtitulo">Adaptando o gerador de WEB1, seu design também foi estilizado através do CSS.</a>
-        </div>
-      </section>
 
       <!-- CONTATO -->
 
@@ -127,6 +170,7 @@
           <input type="submit" name="enviar" value="Enviar">
         </p>
       </form>
+
     </section>
 
     <!-- FOOTER -->

@@ -1,3 +1,4 @@
+
 body, ul, li, p{
   margin: 0px;
   padding: 0px;
@@ -13,13 +14,10 @@ img{
   display: block;
 }
 
-
-
 /*TÍTULOS/SUBTÍTULOS*/
 
 .subtitulo{
   text-decoration: none;
-  font-family: Tahoma;
   text-align: center;
   padding-top: 8px;
   font-size: 0.8rem;
@@ -42,9 +40,6 @@ img{
   text-align: justify;
 }
 
-.dsm{
-  text-align: center;
-}
 
 .titulo{
   font-size: 40px;
@@ -59,10 +54,12 @@ img{
 }
 
 .leg{
+  color: white;
   text-align: center;
 }
 
 .sub{
+  font-size: 1.2rem;
   font-family: Arial;
   margin: 0 auto;
 }
@@ -85,6 +82,13 @@ body{
   background-size: cover;
 }
 
+#eu{
+  max-width: 100%;
+}
+
+.card{
+  margin: 0 auto;
+}
 
 /*HEADER*/
 .header {
@@ -141,8 +145,7 @@ body{
   text-align: center;
   text-shadow: 2px 2px 8px #000000;
   color: white;
-  font-size: 50px;
-  padding: 150px;
+  padding: 200px;
   margin: 0 auto;
 }
 
@@ -174,14 +177,16 @@ body{
   align-self: end;
 }
 
-.flex-item p{
+
+
+/*.flex-item p{
   background: rgba(38, 38, 38, 0.4);
   padding: 10px;
   color: white;
   grid-column: 1;
   grid-row: 2;
   align-self: end;
-}
+}*/
 
 
 /*SLIDE*/
@@ -247,7 +252,7 @@ body{
 	transform: scale(1.1);
 }
 
-/*TALVEZ MAIS UM*/
+/*TALVEZ MAIS UM
 .grid3{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -278,7 +283,7 @@ body{
   grid-column: 1;
   grid-row: 2;
   align-self: end;
-}
+}*/
 
 /*CONTATO*/
 form{
