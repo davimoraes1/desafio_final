@@ -22,67 +22,69 @@
     <meta name="theme-color" content="#ffffff">
 
     <title>DSM</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
   </head>
+
   <body>
-    <!-- HEADER -->
-    <div id="top" class="header">
-      <a href="#default" class="logo">&#127756; DSM</a>
-      <div id="top1" class="header-right">
-        <a class="btn btn-primary" href="#about" role="button" style="color: white;">Sobre</a>
-        <a class="btn btn-primary" href="#projects" role="button" style="color: white;">Projetos</a>
-        <a class="btn btn-primary" href="#contact" role="button" style="color: white;">Contato</a>
-        <a class="btn btn-primary" href="http://www.mediafire.com/file/6c3ojpa7cu87927/projetos.rar/file" target="_blank" role="button" style="color: white;">Download</a>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">DSM</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projetos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="http://www.mediafire.com/file/6c3ojpa7cu87927/projetos.rar/file">Download</a>
+        </li>
       </div>
-    </div>
+    </nav>
 
-    <!-- INÍCIO -->
-    <div class="join">
-      <h1 style="font-size:8vw">DSM</h1>
-      <p style="font-size:1.3vw">Seja bem-vindo ao meu portfólio, por aqui saberá um pouco mais sobre mim e meus projetos.</p>
-    </div>
-
-
-    <!-- SOBRE -->
-
-
-    <!--FLEXBOX-->
-
-    <section class="bg">
-
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="img/clock.jpg" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Relógio Digital</h5>
-              <p>Design Atrativo</p>
-            </div>
+    <!-- CARROSEL -->
+    <h1 class="titulo">SOBRE</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="img/rosto.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="txtT1">Olá,</h5>
+            <p class="txtT2">Me chamo Davi Moraes, atual estudante de Informática no IFMS.</p>
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/calc.jpg" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Calculadora Digital</h5>
-              <p>Simples e Eficaz</p>
-            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/calc.jpg" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="txtT1">Olá,</h5>
+            <p class="txtT2">Me chamo Natan Moraes, atual estudante de Informática no IFMS.</p>
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/tabuada.jpg" alt="Third slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Tabuada Digital</h5>
-              <p>Útil e Eficaz</p>
-            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/foto.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="txtS">Apreciem o nosso trabalho!</h5>
+            <p class="txtS">Obrigado!</p>
           </div>
+        </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -94,28 +96,12 @@
         </a>
       </div>
 
-      <h1 id="about" class="titulo">&#127891; SOBRE</h1>
-
-      <section class="flex">
-        <div class="flex-item">
-          <div id="eu" class="card" style="width: 40rem; background: rgba(38, 38, 38, 0.4);">
-            <div class="zoom">
-              <img class="card-img-top" src="img/rosto.jpg" alt="Card image cap">
-            </div>
-            <div class="card-body">
-              <p class="card-text" style="color: white;">Me chamo Davi Soares Moraes, tenho 17 anos e atualmente curso o sexto semestre do curso de
-              Informática no Instituto Federal de Mato Grosso do Sul (IFMS). Sou um programador e designer amador.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    <!-- PROJETOS -->
-
-      <h1 id="projects" class="titulo">&#128204; PROJETOS</h1>
-      <section class="flex">
-
-        <div class="flex-item">
+    <!-- CARDS -->
+    <br><br><br>
+    <h1 id="projects" class="titulo">PROJETOS</h1>
+    <div class="container">
+      <div class="row p-2">
+        <div class="col mb-2">
           <div class="card" style="width: 18rem; background: rgba(38, 38, 38, 0.4);">
             <div class="zoom">
               <a href="slider.html" target="_blank"><img class="card-img-top" src="img/power.jpg" alt="Card image cap"></a>
@@ -125,8 +111,8 @@
               <a href="slider.html" target="_blank" class="subtitulo">Slider automático de fotos feito em HTML e CSS.</a>
             </div>
           </div>
-
-        <div class="flex-item">
+        </div>
+        <div class="col mb-2">
           <div class="card" style="width: 18rem; background: rgba(38, 38, 38, 0.4);">
             <div class="zoom">
               <a href="relogio.html" target="_blank"><img class="card-img-top" src="img/relogio.jpg" alt="Card image cap"></a>
@@ -137,8 +123,7 @@
             </div>
           </div>
         </div>
-
-        <div class="flex-item">
+        <div class="col mb-2">
           <div class="card" style="width: 18rem; background: rgba(38, 38, 38, 0.4);">
             <div class="zoom">
               <a href="DNewS/index.html" target="_blank"><img class="card-img-top" src="img/foto2.jpg" alt="Card image cap"></a>
@@ -149,8 +134,9 @@
             </div>
           </div>
         </div>
-
-        <div class="flex-item">
+      </div>
+      <div class="row p-2">
+        <div class="col mb-2">
           <div class="card" style="width: 18rem; background: rgba(38, 38, 38, 0.4);">
             <div class="zoom">
               <a href="calculadora.html" target="_blank"><img class="card-img-top" src="img/calc.jpg" alt="Card image cap"></a>
@@ -161,8 +147,7 @@
             </div>
           </div>
         </div>
-
-        <div class="flex-item">
+        <div class="col mb-2">
           <div class="card" style="width: 18rem; background: rgba(38, 38, 38, 0.4);">
             <div class="zoom">
               <a href="tabela.html" target="_blank"><img class="card-img-top" src="img/excel.jpg" alt="Card image cap"></a>
@@ -173,8 +158,7 @@
             </div>
           </div>
         </div>
-
-        <div class="flex-item">
+        <div class="col mb-2">
           <div class="card" style="width: 18rem; background: rgba(38, 38, 38, 0.4);">
             <div class="zoom">
               <a href="tabuada.html" target="_blank"><img class="card-img-top" src="img/tabuada.jpg" alt="Card image cap"></a>
@@ -185,12 +169,12 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-      <!-- CONTATO -->
-
-      <h1 id="contact" class="titulo">&#128222; CONTATO</h1>
-
-      <form name="formteste" action="" method="post">
+    <!-- CONTATO -->
+    <h1 id="contact" class="titulo">CONTATO</h1>
+    <form name="formteste" action="" method="post">
 
         <p class="nome">
           <input type="text" name="nome" placeholder="Informe seu nome." required="required">
@@ -212,16 +196,25 @@
           <input type="submit" name="enviar" value="Enviar">
         </p>
       </form>
-
-    </section>
+      <br>
 
     <!-- FOOTER -->
-    <div class="footer">
-      <a href="#top" class="logo">&#127756; DSM</a>
-      <div class="footer-right">
-        <a href="https://twitter.com/dsmzin" target="_blank">&#128038; Twitter</a>
-        <a href="https://www.youtube.com/channel/UCASNMzzx0txhBWHOEHrx3MQ?view_as=subscriber" target="_blank">&#127909; YouTube</a>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DSM</font></font></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar de navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/dsmzin" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Twitter</font></font></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/channel/UCASNMzzx0txhBWHOEHrx3MQ?view_as=subscriber" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YouTube</font></font></a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
+
   </body>
 </html>
