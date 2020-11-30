@@ -24,6 +24,17 @@ a:link{
   text-shadow: 2px 2px 8px #000000;
 }
 
+/*Hover*/
+#trnst:hover{
+  color: black;
+  transition: 0.4s;
+}
+
+#trnstC:hover{
+  color: white;
+  transition: 0.4s;
+}
+
 /*Texto Slides*/
 .txtT1{
   font-size: 5vh;
@@ -79,7 +90,7 @@ a:link{
 
 .subtitulo:hover{
   color: white;
-  transition: 0.8s;
+  transition: 0.4s;
 }
 
 
