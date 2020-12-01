@@ -37,12 +37,10 @@ a:link{
 
 /*Texto Slides*/
 .txtT1{
-  font-size: 5vh;
   text-shadow: 2px 2px 8px #000000;
 }
 
 .txtT2{
-  font-size: 3vh;
   text-shadow: 2px 2px 8px #000000;
 }
 
@@ -73,7 +71,7 @@ a:link{
 /*Container*/
 
 .container{
-  padding: 90px;
+  padding: 0px;
 }
 
 
